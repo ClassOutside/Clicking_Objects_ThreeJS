@@ -1,8 +1,9 @@
 import * as THREE from 'three';
 
 export function getFirstObjectWithName(event, window, camera, scene, name){
-
+    
     const raycaster = new THREE.Raycaster();
+    const getFirstValue = true;
 
     const mousePointer = getMouseVector2(event, window);
 	const intersections = checkRayIntersections(mousePointer, camera, raycaster, scene, getFirstValue);
